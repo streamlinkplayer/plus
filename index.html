@@ -26,4 +26,29 @@
 </html>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opening Stream...</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const streamId = params.get("stream") || "";
+
+    // Попытка открыть приложение через кастомный deeplink
+    const deeplink = "streamlinkplayerproplus://open?stream=" + encodeURIComponent(streamId);
+    window.location = deeplink;
+
+    // Если приложения нет → редирект на Google Play с referrer
+    setTimeout(() => {
+      const playUrl = "https://play.google.com/store/apps/details?id=com.sgra.dragon&referrer=stream%3D" + encodeURIComponent(streamId);
+      window.location = playUrl;
+    }, 1000);
+  </script>
+</head>
+<body>
+  <p>Opening Stream...</p>
+</body>
+</html>
+
 
