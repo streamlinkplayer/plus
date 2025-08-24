@@ -5,34 +5,6 @@
   <title>Opening Stream...</title>
   <script>
     const params = new URLSearchParams(window.location.search);
-    const stream = params.get("stream") || "";
-
-    // Deeplink в приложении (резервный вариант)
-    const deeplink = "streamlinkplayerproplus://open?stream=" + encodeURIComponent(stream);
-
-    // Пробуем открыть приложение
-    window.location = deeplink;
-
-    // Если не установлено → Play Store
-    setTimeout(function() {
-      const playUrl = "https://play.google.com/store/apps/details?id=com.example.myapp&referrer=stream%3D" + encodeURIComponent(stream);
-    window.location = playUrl;
-    }, 1000);
-  </script>
-</head>
-<body>
-  <p>Opening Stream...</p>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Opening Stream...</title>
-  <script>
-    const params = new URLSearchParams(window.location.search);
     const streamId = params.get("stream") || "";
 
     // Попытка открыть приложение через кастомный deeplink
@@ -50,5 +22,6 @@
   <p>Opening Stream...</p>
 </body>
 </html>
+
 
 
