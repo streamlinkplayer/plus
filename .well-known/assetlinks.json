@@ -4,7 +4,18 @@
     "namespace": "android_app",
     "package_name": "com.lunavo.app.streamlinkplayerproplus",
     "sha256_cert_fingerprints": [
-      "E9:C5:38:52:97:DF:C9:17:7E:D1:27:62:CA:C9:C5:F1:11:42:78:06:D9:9D:C7:7A:37:1F:6D:FD:43:93:14:00"
+      "E9:C5:38:52:97:DF:C9:17:7E:D1:27:62:CA:C9:C5:F1:11:42:78:06:D9:9D:C7:7A:37:1F:6D:FD:43:93:14:00" // RELEASE
     ]
   }
-}]
+},
+{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.lunavo.app.streamlinkplayerproplus",
+    "sha256_cert_fingerprints": [
+      "66:D8:20:1A:24:00:57:3E:62:64:57:E0:71:89:23:0B:E8:B7:4C:D1:E4:96:B3:9C:2E:91:DE:6D:94:25:D0:A6" // DEBUG
+    ]
+  }
+}
+]
