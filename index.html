@@ -5,17 +5,17 @@
   <title>Opening Stream...</title>
   <script>
     const params = new URLSearchParams(window.location.search);
-    const id = params.get("id") || "";
+    const stream = params.get("stream") || "";
 
     // Deeplink в приложении (резервный вариант)
-    const deeplink = "streamlinkplayerproplus://open?stream=" + encodeURIComponent(id);
+    const deeplink = "streamlinkplayerproplus://open?stream=" + encodeURIComponent(stream);
 
     // Пробуем открыть приложение
     window.location = deeplink;
 
     // Если не установлено → Play Store
     setTimeout(function() {
-      const playUrl = "https://play.google.com/store/apps/details?id=com.sgra.dragon&stream=id%3D" + encodeURIComponent(id);
+      const playUrl = "https://play.google.com/store/apps/details?id=com.example.myapp&referrer=stream%3D" + encodeURIComponent(stream);
     window.location = playUrl;
     }, 1000);
   </script>
@@ -24,3 +24,4 @@
   <p>Opening Stream...</p>
 </body>
 </html>
+
