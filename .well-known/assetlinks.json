@@ -2,7 +2,7 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "com.lunavo.app.streamlinkplayerproplus.features.player",
+    "package_name": "com.lunavo.app.streamlinkplayerproplus",
     "sha256_cert_fingerprints": [
       "E9:C5:38:52:97:DF:C9:17:7E:D1:27:62:CA:C9:C5:F1:11:42:78:06:D9:9D:C7:7A:37:1F:6D:FD:43:93:14:00"
     ]
